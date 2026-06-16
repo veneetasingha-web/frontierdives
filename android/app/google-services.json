@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "359677695752",
+    "firebase_url": "https://frontier-dives-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "frontier-dives",
+    "storage_bucket": "frontier-dives.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:359677695752:android:67aa6b7ebce8e893fdfebd",
+        "android_client_info": {
+          "package_name": "com.example.frontierdives"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBI1A3Bl0cw11MEcANdsGifW5bVY3K1Wm0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
