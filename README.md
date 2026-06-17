@@ -1,40 +1,9 @@
-<<<<<<< HEAD
-# frontierdives
+# Frontier Dives
 
-A new Flutter project.
+## 🌍 Project Overview
 
-## Getting Started
+**Frontier Dives** is a storytelling initiative rooted in Kathmandu that blends AI-powered synthesis with human curation to craft authentic, verifiable narratives. Writers and AI models collaborate outside the platform to create drafts, which are then uploaded into the Firebase backbone for governance, storage, and delivery.  
 
-This project is a starting point for a Flutter application.
+With Flutter integration, Frontier Dives runs seamlessly across Web, iOS, and Android, offering audiences a unified experience. Each dive explores themes like sustainability, culture, and politics—designed to resonate locally while sparking global reflection.  
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-=======
-﻿# Frontier Dives
-
-A multi-environment Flutter application powered by Firebase.
-
-## Environments
-- **Development** (develop branch)
-- **Staging** (staging branch)  
-- **Production** (main branch)
-
-## Project Structure
-- lutter_app/ - Flutter frontend
-- irebase_functions/ - Cloud Functions
-- irebase_config/ - Environment configurations
-- .github/workflows/ - CI/CD pipelines
-
-## Getting Started
-See [docs/SETUP.md](docs/SETUP.md) for detailed setup instructions.
-
-## Contributing
-See [docs/CONTRIBUTING.md](docs/CONTRIBUTING.md)
->>>>>>> dcbb01371a177e6523306d06934be9e8e95a5cc2
+This repository hosts the Flutter codebase connected to Firebase services, forming the MVP ecosystem.
