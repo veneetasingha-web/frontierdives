@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # frontierdives
 
 A new Flutter project.
@@ -15,3 +16,25 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+=======
+﻿# Frontier Dives
+
+A multi-environment Flutter application powered by Firebase.
+
+## Environments
+- **Development** (develop branch)
+- **Staging** (staging branch)  
+- **Production** (main branch)
+
+## Project Structure
+- lutter_app/ - Flutter frontend
+- irebase_functions/ - Cloud Functions
+- irebase_config/ - Environment configurations
+- .github/workflows/ - CI/CD pipelines
+
+## Getting Started
+See [docs/SETUP.md](docs/SETUP.md) for detailed setup instructions.
+
+## Contributing
+See [docs/CONTRIBUTING.md](docs/CONTRIBUTING.md)
+>>>>>>> dcbb01371a177e6523306d06934be9e8e95a5cc2
