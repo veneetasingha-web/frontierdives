@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "public",
+    "public": "build/web",
     "ignore": [
       "firebase.json",
       "**/.*",
@@ -12,28 +12,5 @@
         "destination": "/index.html"
       }
     ]
-  },
-  "flutter": {
-    "platforms": {
-      "android": {
-        "default": {
-          "projectId": "frontier-dives",
-          "appId": "1:359677695752:android:67aa6b7ebce8e893fdfebd",
-          "fileOutput": "android/app/google-services.json"
-        }
-      },
-      "dart": {
-        "lib/firebase_options.dart": {
-          "projectId": "frontier-dives",
-          "configurations": {
-            "android": "1:359677695752:android:67aa6b7ebce8e893fdfebd",
-            "ios": "1:359677695752:ios:3b766e3ac77f98c3fdfebd",
-            "macos": "1:359677695752:ios:3b766e3ac77f98c3fdfebd",
-            "web": "1:359677695752:web:885941e763908d79fdfebd",
-            "windows": "1:359677695752:web:7b65606f3d17e383fdfebd"
-          }
-        }
-      }
-    }
   }
 }
