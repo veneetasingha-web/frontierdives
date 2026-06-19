@@ -5,7 +5,7 @@ class AddEntryToDiveVariablesBuilder {
   String title;
   String contentType;
   String contentBody;
-  final Optional<int> _complexityRating = Optional.optional(nativeFromJson, nativeToJson);
+  Optional<int> _complexityRating = Optional.optional(nativeFromJson, nativeToJson);
 
   final FirebaseDataConnect _dataConnect;  AddEntryToDiveVariablesBuilder complexityRating(int? t) {
    _complexityRating.value = t;
@@ -54,7 +54,7 @@ class AddEntryToDiveEntryInsert {
     return json;
   }
 
-  const AddEntryToDiveEntryInsert({
+  AddEntryToDiveEntryInsert({
     required this.id,
   });
 }
@@ -88,7 +88,7 @@ class AddEntryToDiveData {
     return json;
   }
 
-  const AddEntryToDiveData({
+  AddEntryToDiveData({
     required this.entry_insert,
   });
 }
@@ -150,7 +150,7 @@ class AddEntryToDiveVariables {
     return json;
   }
 
-  const AddEntryToDiveVariables({
+  AddEntryToDiveVariables({
     required this.diveId,
     required this.title,
     required this.contentType,
