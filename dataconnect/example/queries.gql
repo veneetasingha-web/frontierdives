@@ -1,0 +1,39 @@
+mutation CreateUser($username: String!, $email: String!, $bio: String, $expertiseLevel: String) @auth(level: PUBLIC) {
+  user_insert(data: { username: $username, email: $email, bio: $bio, expertiseLevel: $expertiseLevel })
+}
+
+mutation CreateDive($title: String!, $description: String!, $category: String!, $tags: [String!]) @auth(level: USER) {
+  dive_insert(data: { 
+    title: $title, 
+    description: $description, 
+    category: $category, 
+    tags: $tags, 
+    authorId_expr: "auth.uid" 
+  })
+}
+
+mutation AddEntryToDive($diveId: UUID!, $title: String!, $contentType: String!, $contentBody: String!, $complexityRating: Int) @auth(level: USER) {
+  entry_insert(data: {
+    diveId: $diveId,
+    title: $title,
+    contentType: $contentType,
+    contentBody: $contentBody,
+    complexityRating: $complexityRating
+  })
+}
+
+query GetUserLibrary @auth(level: USER) {
+  libraries(where: { userId: { eq_expr: "auth.uid" } }) {
+    user {
+      username
+      bio
+      dives_on_author {
+        title
+        entries_on_dive {
+          title
+          complexityRating
+        }
+      }
+    }
+  }
+}

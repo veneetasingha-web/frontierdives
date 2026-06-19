@@ -1,0 +1,35 @@
+type User @table {
+  username: String!
+  email: String!
+  bio: String
+  expertiseLevel: String
+}
+
+type Dive @table {
+  title: String!
+  description: String!
+  category: String!
+  tags: [String]
+  createdAt: Timestamp
+  author: User
+}
+
+type Entry @table {
+  title: String!
+  contentType: String!
+  contentBody: String!
+  externalUrl: String
+  complexityRating: Int
+  dive: Dive
+}
+
+type Library @table {
+  user: User!
+}
+
+type Interaction @table {
+  type: String!
+  value: String!
+  user: User!
+  entry: Entry!
+}

@@ -1,0 +1,30 @@
+mutation SeedData @transaction {
+  user_insertMany(data: [
+    {
+      username: "johndoe",
+      email: "john@example.com",
+      bio: "Avid diver and ocean lover.",
+      expertiseLevel: "Advanced"
+    },
+    {
+      username: "janedoe",
+      email: "jane@example.com",
+      bio: "Marine biologist and underwater photographer.",
+      expertiseLevel: "Expert"
+    }
+  ])
+  dive_insertMany(data: [
+    {
+      title: "Great Barrier Reef Exploration",
+      description: "A deep dive into the northern sections of the GBR.",
+      category: "Reef",
+      tags: ["reef", "ocean", "adventure"]
+    },
+    {
+      title: "Wreck of the SS President Coolidge",
+      description: "Exploring a massive WWII troopship wreck.",
+      category: "Wreck",
+      tags: ["wreck", "history", "deep-dive"]
+    }
+  ])
+}
