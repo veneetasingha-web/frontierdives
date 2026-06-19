@@ -3,8 +3,8 @@ part of 'generated.dart';
 class CreateUserVariablesBuilder {
   String username;
   String email;
-  Optional<String> _bio = Optional.optional(nativeFromJson, nativeToJson);
-  Optional<String> _expertiseLevel = Optional.optional(nativeFromJson, nativeToJson);
+  final Optional<String> _bio = Optional.optional(nativeFromJson, nativeToJson);
+  final Optional<String> _expertiseLevel = Optional.optional(nativeFromJson, nativeToJson);
 
   final FirebaseDataConnect _dataConnect;  CreateUserVariablesBuilder bio(String? t) {
    _bio.value = t;
@@ -57,7 +57,7 @@ class CreateUserUserInsert {
     return json;
   }
 
-  CreateUserUserInsert({
+  const CreateUserUserInsert({
     required this.id,
   });
 }
@@ -91,7 +91,7 @@ class CreateUserData {
     return json;
   }
 
-  CreateUserData({
+  const CreateUserData({
     required this.user_insert,
   });
 }
@@ -152,7 +152,7 @@ class CreateUserVariables {
     return json;
   }
 
-  CreateUserVariables({
+  const CreateUserVariables({
     required this.username,
     required this.email,
     required this.bio,

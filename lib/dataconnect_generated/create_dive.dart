@@ -4,7 +4,7 @@ class CreateDiveVariablesBuilder {
   String title;
   String description;
   String category;
-  Optional<List<String>> _tags = Optional.optional(listDeserializer(nativeFromJson), listSerializer(nativeToJson));
+  final Optional<List<String>> _tags = Optional.optional(listDeserializer(nativeFromJson), listSerializer(nativeToJson));
 
   final FirebaseDataConnect _dataConnect;  CreateDiveVariablesBuilder tags(List<String>? t) {
    _tags.value = t;
@@ -53,7 +53,7 @@ class CreateDiveDiveInsert {
     return json;
   }
 
-  CreateDiveDiveInsert({
+  const CreateDiveDiveInsert({
     required this.id,
   });
 }
@@ -87,7 +87,7 @@ class CreateDiveData {
     return json;
   }
 
-  CreateDiveData({
+  const CreateDiveData({
     required this.dive_insert,
   });
 }
@@ -146,7 +146,7 @@ class CreateDiveVariables {
     return json;
   }
 
-  CreateDiveVariables({
+  const CreateDiveVariables({
     required this.title,
     required this.description,
     required this.category,

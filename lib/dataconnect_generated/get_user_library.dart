@@ -45,7 +45,7 @@ class GetUserLibraryLibraries {
     return json;
   }
 
-  GetUserLibraryLibraries({
+  const GetUserLibraryLibraries({
     required this.user,
   });
 }
@@ -91,7 +91,7 @@ class GetUserLibraryLibrariesUser {
     return json;
   }
 
-  GetUserLibraryLibrariesUser({
+  const GetUserLibraryLibrariesUser({
     required this.username,
     this.bio,
     required this.dives_on_author,
@@ -133,7 +133,7 @@ class GetUserLibraryLibrariesUserDivesOnAuthor {
     return json;
   }
 
-  GetUserLibraryLibrariesUserDivesOnAuthor({
+  const GetUserLibraryLibrariesUserDivesOnAuthor({
     required this.title,
     required this.entries_on_dive,
   });
@@ -174,7 +174,7 @@ class GetUserLibraryLibrariesUserDivesOnAuthorEntriesOnDive {
     return json;
   }
 
-  GetUserLibraryLibrariesUserDivesOnAuthorEntriesOnDive({
+  const GetUserLibraryLibrariesUserDivesOnAuthorEntriesOnDive({
     required this.title,
     this.complexityRating,
   });
@@ -211,7 +211,7 @@ class GetUserLibraryData {
     return json;
   }
 
-  GetUserLibraryData({
+  const GetUserLibraryData({
     required this.libraries,
   });
 }
